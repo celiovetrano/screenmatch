@@ -17,7 +17,8 @@ public class Principal {
 
         //System.out.println(meuFilme.somaDasAvaliacoes);
         System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
-        System.out.println("Média de avaliações do filme: " + meuFilme.pegaMedia() );
+        System.out.println("Média de avaliações do filme: " + meuFilme.pegaMedia());
+        System.out.println("Duracao do filme: " + meuFilme.getDuracaoEmMinutos());
 
         Serie lost = new Serie();
         lost.setNome("Lost");
@@ -25,6 +26,8 @@ public class Principal {
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(10);
+        lost.setMinutosPorEpisodio(50);
+        System.out.println("Duracao para Maratonar Lost: " + lost.getDuracaoEmMinutos());
 
     }
 }
