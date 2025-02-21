@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
+        Filme meuFilme = new Filme("The Matrix");
 
-        meuFilme.setNome("The Matrix");
+//        meuFilme.setNome("The Matrix");
         meuFilme.setAnoDeLancamento(1999);
         meuFilme.setDuracaoEmMinutos(135);
         meuFilme.setIncluidoNoPlano(true);
@@ -34,9 +34,9 @@ public class Principal {
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duracao para Maratonar Lost: " + lost.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme();
+        Filme outroFilme = new Filme("Avatar");
 
-        outroFilme.setNome("Avatar");
+//        outroFilme.setNome("Avatar");
         outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
         outroFilme.setIncluidoNoPlano(true);
@@ -57,9 +57,9 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        var filmeDoPaulo = new Filme();
+        var filmeDoPaulo = new Filme("Dogville");
         filmeDoPaulo.setDuracaoEmMinutos(220);
-        filmeDoPaulo.setNome("Dogville");
+//        filmeDoPaulo.setNome("Dogville");
         filmeDoPaulo.setAnoDeLancamento(2003);
         filmeDoPaulo.avalia(10);
 
@@ -71,6 +71,8 @@ public class Principal {
         System.out.println("Primeiro filme: "+ listadeFilmes.get(0).getNome());
         System.out.println(listadeFilmes);
         System.out.println("TO STRING do filme: "+ listadeFilmes.get(0).toString());
+
+
 
     }
 }

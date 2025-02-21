@@ -19,6 +19,7 @@ public class CalculadoraDeTempo {
 
     // Polimorfismo
     public void inclui(Titulo titulo) {
+        System.out.println("Adicionando duração em minutos de " + titulo);
         this.tempoTotal += titulo.getDuracaoEmMinutos();
     }
 }
