@@ -1,8 +1,11 @@
+package br.com.alura.screenmatch.principal;
+
 import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
+import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
 
@@ -53,10 +56,12 @@ public class Principal {
         filmeDoPaulo.setDuracaoEmMinutos(220);
         filmeDoPaulo.avalia(10);
 
-        ArrayList<Filme> listadeFilmes = new ArrayList<>();
+        ArrayList<Titulo> listadeFilmes = new ArrayList<>();
         listadeFilmes.add(filmeDoPaulo);
         listadeFilmes.add(meuFilme);
         listadeFilmes.add(outroFilme);
+        listadeFilmes.add(lost);
+
         System.out.println("Tamanho da lista " + listadeFilmes.size());
         System.out.println("Primeiro filme: "+ listadeFilmes.get(0).getNome());
         System.out.println(listadeFilmes);
